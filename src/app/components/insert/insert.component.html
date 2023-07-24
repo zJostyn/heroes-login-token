@@ -1,0 +1,27 @@
+<form class="form">
+    <div class="contenedores">
+        <label for="nom">Nombre del Heroe:</label>
+        <input #HeroeNom name="nom" type="text">
+    </div>
+    <div class="contenedores">
+        <label for="bio">Biografia del Heroe:</label>
+        <input #HeroeBio ame="bio" type="text">
+    </div>
+    <div class="contenedores">
+        <label for="img">Imagen del Heroe:</label>
+        <input #HeroeImg name="img" type="input">
+    </div>
+    <div class="contenedores">
+        <label for="apa">Aparicion del Heroe:</label>
+        <input #HeroeApa name="apa" type="date">
+    </div>
+    <div class="contenedores">
+        <label for="casa">Casa del Heroe:</label>
+        <select #HeroeCasa name="casa" id="casa">
+            <option value="opciones">Seleccione una Casa</option>
+            <option value="marvel">Marvel</option>
+            <option value="dc">DC</option>
+        </select>
+    </div>
+</form>
+<button (click)="enviarHeroe(HeroeNom.value,HeroeBio.value,HeroeImg.value,HeroeApa.value,HeroeCasa.value)" class="insert">Insert Heroe</button>

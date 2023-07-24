@@ -1,0 +1,15 @@
+<div class="login-box">
+    <h1>Inicio de sesión</h1>
+    <form>
+        <label for="email ">Correo Electronico:</label>
+        <input #ema type="text" placeholder="Ingrese el correo ">
+
+        <label for="pass">Contraseña:</label>
+        <input #pass type="password" placeholder="Ingrese la contraseña ">
+
+        <input (click)="Ingresar(ema.value, pass.value)" type="button" value="Log In" style="cursor:pointer">
+
+
+        <a [routerLink]=" '/register' ">¿Necesitas una cuenta?</a>
+    </form>
+</div>

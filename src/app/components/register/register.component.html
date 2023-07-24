@@ -1,0 +1,15 @@
+<div class="register-box">
+    <h1>Registrar una Cuenta</h1>
+    <form>
+        <label for="email ">Correo Electronico:</label>
+        <input #ema type="text" placeholder="Ingrese el correo ">
+
+        <label for="pass">Contraseña:</label>
+        <input #pass type="password" placeholder="Ingrese la contraseña ">
+
+        <input (click)="Enviar(ema.value, pass.value)" type="button" value="Register" style="cursor:pointer">
+
+
+        <a [routerLink]=" '/login' ">¿Ya tienes una cuenta?</a>
+    </form>
+</div>
